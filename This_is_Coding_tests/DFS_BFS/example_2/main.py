@@ -12,6 +12,7 @@ def bfs(x, y):
             nx = x + dx[i]
             ny = y + dy[i]
 
+            #  범위를 초과하는 경우 다음.
             if nx < 0 or nx >= n or ny<0 or ny>= m:
                 continue
 
