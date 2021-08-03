@@ -17,7 +17,7 @@ distance[x] = 0 #출발 도시 까지의 거리는 0으로 설정
 q = deque([x]) #x를 넣고 시작. 출발도시
 
 while q:
-    now = q.popleft()
+    now = q.popleft() #queue
     #현재 도시에서 이동할 수 있는 모든 도시 확인
     for next_node in graph[now]:
         if distance[next_node] == -1:
