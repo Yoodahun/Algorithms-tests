@@ -44,6 +44,6 @@ while q:
             #아직 방문하지 않았다면, 위치에 바이러스를 집어 넣기
             if graph[nx][ny] == 0:
                 graph[nx][ny] = virus
-                q.append((virus, s+1, nx, ny))
+                q.append((virus, s+1, nx, ny)) # queue에 다시 넣기
 
 print(graph[target_x-1][target_y-1])
