@@ -31,7 +31,8 @@ for i in range(1, v + 1):
     parent[i] = i
 
 # 모든 간선에 대한 정보를 입력받기.
-# 간선의 비용과 a, b 노드
+# 간선의 비용과 a, b 노드입력받기
+
 for _ in range(e):
     a, b, cost = map(int, input().split())
     # 비용 순으로 정렬하기 위해 튜플의 첫 번째 원소를 비용으로 설정
